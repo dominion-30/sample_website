@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abiola Ayobamidele">
+    <meta name="description" content="This page contains all the tags used in Sample Website in learn enough HTML Tutorial to Be Dangerous">
+    <title>HTML Tags</title>
+</head>
+<body>
+    <div style="text-align: right;">
+        <a href="index.html" style="margin:  0 0 0 10px; text-decoration: none;">Home</a>
+        <a href="moby_dick.html" style="margin: 0 0 0 10px; text-decoration: none;">Moby Dick</a>
+    </div>
+    <h1>Important HTML tags</h1>
+    <a href="https://www.flickr.com/photos/jdhancock/3814523970" title="Image is under Creative Commons License" target="_blank"><img src="image/storm_trooper_tagged.jpg" alt="Tagged Storm Trooper"></a>
+    
+    <p>
+        This page is designed as a quick reference for some of the common tags covered in <a href="http://learnenough.com/html-tutorial"><em>Learn Enough HTML to Be Dangerous</em></a>. In the process of making it, we'll learn how to make HTML <em>tables</em> via <code>table</code> and related tags.
+    </p>
+    <p>The tables below don't include all HTML tags, but they do list many of the most important ones.</p>
+    <h1>Block Element</h1>
+
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Purpose
+            </th>
+        </tr>
+        
+        <tr>
+            <td style="padding: 10px;"><code>h1</code>&ndash;<code>h6</code></td>
+            <td>Heading</td>
+            <td>Including a level heading(1 &ndash; 6)</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px;"><code>p</code></td>
+            <td>Paragraph</td>
+            <td>include a in a document</td>
+        </tr>
+
+        <tr>
+            <td><code>table</code></td>
+            <td>table</td>
+            <td>include a table</td>
+        </tr>
+
+        <tr>
+            <td><code>tr</code></td>
+            <td>table row</td>
+            <td>include a row of data</td>
+        </tr>
+
+        <tr>
+            <td><code>th</code></td>
+            <td>table header</td>
+            <td>include header to table</td>
+        </tr>
+
+        <tr>
+            <td><code>td</code></td>
+            <td>table data</td>
+            <td>include table data</td>
+        </tr>
+        <tr>
+            <td><code>header</code></td>
+            <td>header</td>
+            <td>it is used for grouping</td>
+        </tr>
+        <tr>
+            <td><code>div</code></td>
+            <td>division</td>
+            <td>it is used to divide content in the page</td>
+        </tr>
+        
+    </table>
+    <h2>Inline Element</h2>
+
+    <table>
+        <tr>
+            <th>
+                Tag
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Purpose
+            </th>
+            <th>
+                Example
+            </th>
+            <th>
+                Result
+            </th>
+        </tr>
+        
+            <tr>
+                <td><code>em</code></td>
+                <td>Emphasis</td>
+                <td>it italize the text it wraps around</td>
+                <td><code>&lt;em&gt;technical sophistication&lt;/em&gt;</code></td>
+                <td><em>technical sophistication</em></td>
+            </tr>
+
+            <tr>
+                <td><code>strong</code></td>
+                <td>strong</td>
+                <td>it places strong emphasis on the words it wraps</td>
+                <td><code>&lt;strong&gt;Abiola&lt;/strong&gt;</code></td>
+                <td><strong>Abiola</strong></td>
+            
+            </tr>
+            <tr>
+                <td>
+                    <code>a</code>
+                </td>
+                <td>anchor</td>
+                <td>It creates a link</td>
+                <td><code>&lt;a href="https://www.google.com" title="Google Homepage" target="_blank"&gt;Google&lt;/a&gt;</code></td>
+                <td><a href="https://www.google.com" target="_blank" title="Google Homepage">Google</a></td>
+            </tr>
+            <tr>
+                <td><code>img</code></td>
+                <td>Image</td>
+                <td>It is used to include an image to a document</td>
+                <td><code>&lt;img src="image/kitten.jpg" alt="Image of an adorable kitten" &gt;</code></td>
+                <td><img src="image/kitten.jpg" alt="Image of an adorable kitten"></td>
+            </tr>
+            <tr>
+                <th>this displays python syntax</th>
+            </tr>
+            <tr>
+                <td><code>code</code></td>
+                <td>code</td>
+                <td>it is used to include code the way it is i.e maintaining the indentation and spaces</td>
+                <td>&lt;code&gt;print "Abiola" &lt;/code&gt;</td>
+                <td><p>Abiola</p></td>
+            </tr>
+            <tr>
+                <td><code>span</code></td>
+                <td>span</td>
+                <td>it is used for division and similar to &lt;span&gt; but it is an inline element which is used to target html in css</td>
+                <td><code>&lt;used for&gt;</code></td>
+                <td><span style="color: blue;">used for</span></td>
+            </tr>
+            <tr>
+                <td><code>ol</code></td>
+                <td>ordered list</td>
+                <td>it makes words it wraps around ordered lists</td>
+                <td><code>&lt;ol&gt; &lt;li&gt;beans&lt;/li&gt;&lt;/ol&gt;</code></td>
+                <td><ol><li>beans</li></ol></td>
+            </tr>
+
+            <tr>
+                <td><code>ul</code></td>
+                <td>unordered list</td>
+                <td>it makes words it wraps around unordered lists</td>
+                <td><code>&lt;ul&gt;&lt;li&gt;beans&lt;/li&gt;&lt;/ul&gt;</code></td>
+                <td><ul><li>beans</li></ul></td>
+            </tr>
+
+            <tr>
+                <td><code>li</code></td>
+                <td>list</td>
+                <td>it make list in any list type</td>
+                <td><code>&lt;li&gt;recognize&lt;/li&gt;</code></td>
+                <td><li>recognize</li></td>
+            </tr>
+
+
+        
+    </table>
+
+</body>
+</html>
