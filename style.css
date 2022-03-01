@@ -1,0 +1,180 @@
+
+/*
+:root{
+    font-size: 0.875em;
+}
+
+.box{
+
+    padding: 5px;
+    border: 2px solid gray;
+
+    border-radius: 1.5em;
+    width: 40rem;
+}
+h1{
+    font-size: inherit;
+    text-transform: uppercase;
+}*/
+/*
+:root{
+    font-size: 0.875em;
+}
+*/
+
+/*
+.panel{
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #999;
+}
+
+.panel > h2{
+    margin-top: 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+*/
+/*Responsive base font size*/
+/*Applies to all screens, but is overridden for larger screens*/
+/*
+:root{
+    font-size: 1em;
+}
+*/
+
+
+/*Applies only to screens 800 px wider and wider, overriding the original value*/
+/*
+@media (min-width: 800px){
+    :root{
+        font-size: 0.875em;
+    }
+}
+*/
+/*Applies only to screens 1200 px and larger, overriding both values*/
+
+/*@media (min-width: 1200px){
+    :root{
+        font-size: 1em;
+    }
+}
+*/
+
+/*Creating a larger version of the panel*/
+/*
+.panel{
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    border-radius: 0.5em;
+
+}
+
+.panel > h2{
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.panel.large{
+    font-size: 1.2rem;
+    margin-top: 1em;
+}
+
+.panel.small{
+    font-size: 0.85rem;
+    margin-top: 1em;
+}
+
+.square{
+    width: 90vmin;
+    height: 90vmin;
+    background-color:  #369;
+}
+:root{
+    font-size: calc(0.5em + 1vw);
+    --main-font: Helvetica, Arial, sans-serif;
+    --mycolor: #369;
+
+}
+
+body{
+    line-height: 1.2;
+}
+
+.about-us{
+    border: 1px solid gray;
+    width: 12em;
+    padding: 1em;
+    font-family: var(--main-font);
+    background-color: var(--mycolor);
+}
+
+p{
+    font-family: var(--main-font, sans-serif);
+    color: var(--secondary-color, blue);
+}
+*/
+/*
+:root{
+    font-size: 1em;
+    
+}
+
+.panel{
+    padding: 1em;
+    border: 0.01em solid gray;
+    margin-top: 0;
+    border-radius: 1em;
+    background-color: white;
+    color: black;
+
+}
+
+.dark > .panel{
+    background-color: black;
+    color: white;
+    
+}
+.dark{
+    margin-top: 2em;
+    border: 1px solid gray;
+    padding: 1em;
+    background-color: gray;
+    
+}
+
+*/
+
+
+:root{
+    --main-bg:#fff;
+    --main-color:#000;
+}
+
+.panel{
+    font-size: 1rem;
+    padding: 1em;
+    border: 1px solid #999;
+    border-radius: 0.5em;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+}
+
+.panel > h2{
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dark{
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #999;
+    --main-bg:#333;
+    --main-color:#fff;
+}

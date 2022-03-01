@@ -1,0 +1,117 @@
+.title{
+    font-family: monospace;
+    color: black;
+    border-top: 5px ;
+    border-bottom: 5px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    padding: 60px;
+    text-align: center;
+    border-color: brown;
+}
+body{
+    font-size: 20px;
+}
+
+a{
+    color: brown;
+}
+.right-side h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: square;
+}
+ol{
+    list-style: lower-alpha;
+}
+
+/*LoVe/HAte*/
+/*
+a:link{
+    color: blue;
+
+}
+
+a:visited{
+    color: purple;
+    
+}
+a:hover{
+    color: skyblue;
+    background-color: azure;
+    text-decoration: none;
+
+}
+a:active{
+    color: ;
+    text-decoration: none;
+
+}
+*/
+.right-side{
+    border: 5px solid black;
+    padding: 5px;
+    width: 40%;
+    margin-top: 15px;
+    margin-bottom: -1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    
+}
+
+.middle{
+    border: 5px solid black;
+    width: 20%;
+    padding: 15px;
+    
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+
+.left-side{
+    border: 5px solid black;
+    width: 20%;
+    margin-bottom: -1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.left-side li{
+    padding:5px 5px;
+    text-align: center;
+    
+    color: brown;
+    border: 2px solid brown;
+    background-color: white;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.left-side a{
+    text-decoration: none;
+}
+
+/*
+
+.wrapper{
+    
+    display: inline-block;
+
+
+
+    
+}
+*/

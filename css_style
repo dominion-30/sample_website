@@ -1,0 +1,220 @@
+h1 {
+    font-family: monospace;
+    color: #2f4f4f;
+    margin-bottom: 10px; (to reduce the margin)
+
+}
+
+#main-nav{
+    margin-top: 10px;(reduce the margin)
+    list-style:none;(removes user agent style)
+    padding-left: 0;(removes user agent style)
+}
+
+#main-nav li{
+    display: inline-block;(make list items appear side by side rather than stacked)
+}
+
+#main-nav a{
+    color:white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    (this provides a botton like experience for the navigational links)
+}
+
+/* Selectors with different specificities*/
+
+#main-nav a (higher specificity selector){
+    color: white;
+    background-color: #13a4a4; (teal background-color)
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.featured{
+    background-color: orange;(The orange background declaration won't override the teal due to selector specificity.)
+}
+
+body{/*Applying font-family to a parent element*/
+    font-family: sans-serif;
+}
+
+/*Applying a footer to a page*/
+
+a:link{
+    color: blue; /*Global link color for the page*/
+
+}
+
+.footer{/*Footer text color set to gray*/
+    color: #666;
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Expanded equivalent to the shorthand of listing 1.17*/
+
+h1{
+    font-weight:bold;
+}
+
+.title{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    font-size: 32px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*specifying padding for each side of an element*/
+
+.nav a{/*Top, right,bottom and left padding*/
+    color:white;
+    background-color: #13a4a4;
+    padding: 10px 15px 0 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/*Specifying two padding values*/
+
+.nav a{
+    color:white;
+    background-color: #13a4a4;
+    padding: 5px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+
+}
+
+/*Box-shadow specifies x values then y values*/
+
+.nav .featured{/*Shadow offset 10px to the right and 2px down*/
+    background-color: orange;
+    box-shadow: 10px 2px #6f9090;
+}
+
+/*Applying em to padding*/
+
+.padded{/*Sets padding on all sides equal to font-size*/
+    font-size: 16px;
+    padding: 1em;
+}
+
+/*Correcting the shrinking text*/
+
+ul{
+    font-size: .8em;
+}
+
+ul ul{
+    font-size: 1em; /*Lists within lists should have the same font size as their parent*/
+}
+
+/*Specifying font size using rems*/
+
+
+:root{/*The :root pseudo-class is equivalent to the HTML type selector*/
+    font-size: 1em;/*Uses the browser's default size (16px)*/
+}
+
+ul{
+    font-size: .8rem;
+}
+
+/*Antipattern: globally resetting font-size to 10px*/
+
+html{
+    font-size: .625em;
+}
+
+/*Setting the true default font size*/
+
+:root{/*or use the HTML selector*/
+    font-size: 0.875em; /*14/16 (desired px/ inherited px) equals .875*/
+}
+
+
+/*Responsive base font-size*/
+
+:root{ /*Applies to all screens, but is overridden for large screens*/
+    font-size: 0.75em;
+}
+
+@media (min-width: 800px){/*Applies only to screens 800 px and wider, overridng the original value*/
+    :root{
+        font-size: 0.875em;
+    }
+}
+
+@media (min-width: 1200px){/*Applies only to screens 1200px and larger, overriding both values*/
+    :root{
+        font-size: 1em;
+    }
+}
+
+/*Using calc() ti define font-size in ems and vh units*/
+
+:root{
+    font-size: calc(0.5em + 1vw);
+}
+
+/*Defining a custom property*/
+
+:root{
+    --main-font: Helvetica, Arial, sans-serif;
+    --brand-color: #369;
+}
+
+/*Providing fallback values*/
+
+:root{
+    --main-font: Helvetica, Arial, sans-serif;
+    --brand-color:#369;
+
+}
+
+p{
+    font-family: var(--main-font, sans-serif);
+    color: var(--secondary-color,blue);
+}
+
+/*Using variables to define the panel colors*/
+
+/*Defines background and text color variables as white and black respectively*/
+:root{
+    --main-bg:#fff;
+    --main-color:#000;
+
+}
+/*Uses the variables in the panel's styles*/
+.panel{
+    font-size: 1rem;
+    padding:1em;
+    border:1px solid #999;
+    border-radius: 0.5em;
+    background-color: var(--main-bg);
+    color:var(--main-color);
+}
+
+.panel > h2{
+    margin-top: 0;
+    font-size: 0.8em;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+.dark{
+    margin-top: 2em;
+    padding:1em;
+    background-color: #999;
+    --main-bg:#333;
+    --main-color:#fff;
+}
